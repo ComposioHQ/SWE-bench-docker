@@ -21,8 +21,10 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.9,<4",
+    python_requires="==3.11",
     packages=find_packages(include=["swe_bench_docker/*"]),
-    install_requires=[],
+    install_requires=[
+            "swebench==1.1.0",
+        ],
     include_package_data=True,
 )
